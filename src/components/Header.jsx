@@ -7,7 +7,7 @@ const Header = () => {
     let Links = [
         {name: 'Home', link: '/'},
         {name: 'News', link: '/'},
-        {name: 'Live cameras', link: '/'},
+        {name: 'Live Cameras', link: '/'},
         {name: 'Photos', link: '/'},
         {name: 'Contacts', link: '/'},
     ]
@@ -26,7 +26,7 @@ const Header = () => {
                 <ul className="md:flex pl-9 md:pl-0 gap-4">
                 {
                     Links.map((link, index) => (
-                        <li key={index} className="text-slate-100 my-7 md:my-0 md:ml-8 hover:text-[#009ad8] py-1 px-5 border-[]  ">
+                        <li key={index} className="text-slate-200 transition hover:text-[#009ad8] hover:border-[#009ad8]">
                             <a href="/">{link.name}</a>
                         </li>))
                 }
