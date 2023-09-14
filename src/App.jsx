@@ -1,17 +1,17 @@
 import './App.css'
 import Header from './components/header'
-
+import Home from './pages/Home'
 
 
 
 function App() {
   return (
     <>
-    <div className='App'>
-      <Header/>
-      <div className='bg-[#1e202b] w-full h-screen'></div>
+    <div className='App bg-[#1e202b] w-full h-screen'>
+      <Header/> 
+      <Home/>
     </div>
-     
+
     </>
   )
 }

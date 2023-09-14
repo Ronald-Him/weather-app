@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <Fragment>
-        <div className='shadow-md w-full fixed top-0 left-0 bg-[#1e202b]'>
+        <div className='shadow-md w-full top-0 left-0 bg-[#1e202b]'>
             <div className='md:px-40 py-12 px-20 md:flex justify-between items-center'>
                 <div className="flex cursor-pointer items-center gap-4 ">
                     <img src="/src/assets/logo@2x.png" alt="logo" className=" w-16  " />
@@ -45,10 +45,8 @@ const Header = () => {
                 }
             </ul>
             </div>
-
-            
         </div>
-        <img src="/src/assets/banner.png" alt="" className=""/>
+        
         </Fragment>
     );
 };
