@@ -48,6 +48,7 @@ const Header = () => {
 
             
         </div>
+        <img src="/src/assets/banner.png" alt="" className=""/>
         </Fragment>
     );
 };
