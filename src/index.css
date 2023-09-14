@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+  .button{
+    @apply text-[0.875rem] border-third  border-2 px-[1.563rem] py-[0.313rem] rounded-full transition duration-300 ease-in;
+  }
+  .button-hover{
+    @apply hover:text-primary hover:border-primary;
+  }
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
