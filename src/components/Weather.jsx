@@ -12,7 +12,7 @@ function Weather(){
                         <div className='forecast-content'>
                             <div className='location'>New York</div>
                             <div className='degree'>
-                                <div className='num'>23<sup>o</sup>C</div>
+                                <div className='num text-8xl font-medium'>23<sup>o</sup>C</div>
                                 <div className='forecast-icon'>
                                     <img src="/src/assets/icons/icon-1.svg" alt="" className='w-32 h-32'/>
                                 </div>
