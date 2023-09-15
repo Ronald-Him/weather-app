@@ -2,7 +2,7 @@ import './App.css'
 import Header from './components/header'
 import Home from './pages/Home'
 import SearchBar from './components/SearchBar'
-
+import Weather from './components/Weather'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Header/> 
       <Home/>
       <SearchBar/>
+      <Weather/>
     </div>
 
     </>
