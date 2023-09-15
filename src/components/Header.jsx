@@ -21,7 +21,7 @@ const Header = () => {
         <div className='shadow-md w-full top-0 left-0 bg-[#1e202b] container mx-auto'>
             <div className='md:px-40 py-12 px-20 md:flex justify-between items-center'>
                 <div className="flex cursor-pointer items-center gap-4 ">
-                    <img src="/src/assets/logo@2x.png" alt="logo" className=" w-16  " />
+                    <img src="/src/assets/logo@2x.png" alt="logo" className="w-16" />
                     <div className="flex flex-col">
                         <span className="text-slate-100 text-l font-bold">Company name</span>
                         <span className="text-gray-300 text-xs">tagline goes here</span>
