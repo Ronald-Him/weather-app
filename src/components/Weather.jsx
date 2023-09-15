@@ -1,13 +1,13 @@
 import './weatherStyle.scss';
 function Weather(){
     return(
-        <div className="forecast-table">
+        <div className="forecast-table text-white">
             <div className="container mx-auto px-32">
                 <div className="w-full bg-[#323544] table table-fixed truncate rounded-xl mt-[50px]">
                     <div className="today table-cell align-top">
-                        <div className="float-left float-right">
-                            <div className=''>Monday</div>
-                            <div className=''>6 Oct</div>
+                        <div className="">
+                            <div className='float-left'>Monday</div>
+                            <div className='float-right'>6 Oct</div>
                         </div>
                         <div className='forecast-content'>
                             <div className='location'>New York</div>
