@@ -3,9 +3,9 @@ function Weather(){
     return(
         <div className="forecast-table">
             <div className="container mx-auto px-32">
-                <div className="forecast-container">
-                    <div className="main-forecast">
-                        <div className="header">
+                <div className="w-full bg-[#323544] table table-fixed truncate rounded-xl mt-[50px]">
+                    <div className="today table-cell align-top">
+                        <div className="float-left float-right">
                             <div className=''>Monday</div>
                             <div className=''>6 Oct</div>
                         </div>
