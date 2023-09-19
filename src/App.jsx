@@ -17,10 +17,10 @@ function App() {
         <Header/> 
         <Routes>
           <Route exact path='/' element={<Home/>}/>
-          <Route path='/src/pages/News.jsx' element={<News/>}/>
-          <Route path='/src/pages/LiveCameras.jsx' element={<LiveCameras/>}/>
-          <Route path='/src/pages/Photos.jsx' element={<Photos/>}/>
-          <Route path='/src/pages/Contact.jsx' element={<Contact/>}/>
+          <Route path='/news' element={<News/>}/>
+          <Route path='/live-camera' element={<LiveCameras/>}/>
+          <Route path='/photos' element={<Photos/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </Router>
     </div>
