@@ -1,10 +1,45 @@
 import './weatherStyle.scss';
-import SearchBar from './SearchBar';
+
 import { Fragment } from 'react';
-function Weather(){
+
+
+const Weather = () =>{
+
+    let api_key = "1017b0d8ddc253536421c752d8f3bd1b";
+
+    const search = async() =>{
+        const element = document.getElementsByClassName("cityInput");
+        if(element[0].value===""){
+            return 0;
+        }
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
+
+        let response = await fetch(url);
+        let data = await response.json();
+
+        const humidity = document.getElementsByClassName("humidity-percentage");
+        const temperature = document.getElementsByClassName("weather-tmp");
+        const wind = document.getElementsByClassName("wind-speed");
+        const location = document.getElementsByClassName("weather-location");
+
+        humidity[0].innerHTML = data.main.humidity + " %";
+        wind[0].innerHTML = Math.floor(data.wind.speed) + " km/h";
+        temperature[0].innerHTML = Math.floor(data.main.temp) + " °C";
+        location[0].innerHTML = data.name;
+
+    }
+
+
+
+
+
     return(
         <Fragment> 
-        <SearchBar/>
+        <form action="#" className="relative -mt-64 container mx-auto px-32">
+        <input type="text" placeholder="Find your location..." className="w-full pt-[20px] pr-[50px] pb-[20px] pl-[20px] rounded-[30px] bg-[#1e202b] text-white cityInput" />
+        <button type="submit" className="absolute top-1 right-[133px] bottom-1 px-10 rounded-[30px] bg-[#009ad8] text-white cityInput" onClick={()=>{search()}}>Find</button>
+        </form>
+
         <div className='text-gray-300 md:flex max-w-[1170px] max-h-[300px] mx-auto rounded-lg mt-[4.5rem] overflow-hidden bg-[#323544]'>
             <div className='w-[37%]'>
                 <div className='p-[0.625rem] flex justify-between bg-[#2d303d]'>
@@ -12,9 +47,9 @@ function Weather(){
                     <h3>6 Oct</h3>
                 </div>
                 <div className='px-[1.25rem] py-[1.875rem]'>
-                    <h2 className='text-[1.125rem] location'>Phnom Penh</h2>
+                    <h2 className='text-[1.7rem] weather-location'>Phnom Penh</h2>
                     <div className='flex'>
-                        <h1 className='text-[5.625rem] mr-[1.875rem] font-bold text-white'>20&deg;C</h1>
+                        <h1 className='text-[5.625rem] mr-[1.875rem] font-bold text-white weather-tmp'>20&deg;C</h1>
                         <img src="/src/assets/icons/icon-1.svg" alt="" width='90px' />
                     </div>
                     <div className='flex'>
