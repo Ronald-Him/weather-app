@@ -1,101 +1,36 @@
 import './weatherStyle.scss';
 function Weather(){
     return(
-        <div className="forecast-table text-white">
-            <div className="container mx-auto px-32">
-                <div className="w-full bg-[#323544] table table-fixed truncate rounded-xl mt-[50px]">
-                    <div className="today table-cell align-top">
-                        <div className="">
-                            <div className='float-left'>Monday</div>
-                            <div className='float-right'>6 Oct</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='location'>New York</div>
-                            <div className='degree'>
-                                <div className='num text-8xl font-medium'>23<sup>o</sup>C</div>
-                                <div className='forecast-icon'>
-                                    <img src="/src/assets/icons/icon-1.svg" alt="" className='w-32 h-32'/>
-                                </div>
-                            </div>
-                            <span><img src="/src/assets/icon-umberella.png" alt="" />20%</span>
-                            <span><img src="/src/assets/icon-wind.png" alt="" />18km/h</span>
-                            <span><img src="/src/assets/icon-umberella.png" alt="" />East</span>
-                        </div>
+        // 
+        <div className='text-gray-300 md:flex max-w-[1170px] mx-auto rounded-md mt-[4.5rem] overflow-hidder bg-[#323544]'>
+            <div className='w-[37%]'>
+                <div className='p-[0.625rem] flex justify-between'>
+                    <h3>Monday</h3>
+                    <h3>6 Oct</h3>
+                </div>
+                <div className='px-[1.25rem] py-[1.875rem]'>
+                    <h2 className='text-[1.125rem]'>Phnom Penh</h2>
+                    <div className='flex'>
+                        <h1 className='text-[5.625rem] mr-[1.875rem] font-bold text-white'>20&deg;C</h1>
+                        <img src="/src/assets/icons/icon-1.svg" alt="" width='90px' />
                     </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
+                    <div className='flex'>
+                        <div className='flex mr-[1.25rem]'>
+                            <img src="/src/assets/icon-umberella.png" alt="" />
+                            <span className='ml-[0.5rem]'>20%</span>
                         </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
+                        <div className='flex mr-[1.25rem]'>
+                            <img src="/src/assets/icon-wind.png" alt="" />
+                            <span className='ml-[0.5rem]'>18km/h</span>
                         </div>
-                    </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
-                        </div>
-                    </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
-                        </div>
-                    </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
-                        </div>
-                    </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
-                        </div>
-                    </div>
-                    <div className='forecast'>
-                        <div className='header'>
-                            <div className=''>Tuesday</div>
-                        </div>
-                        <div className='forecast-content'>
-                            <div className='forecast-icon'>
-                                <img src="/src/assets/icons/icon-3.svg" alt="" />
-                            </div>
-                            <div className="degree">23<sup>o</sup>C</div>
-							<small>18<sup>o</sup></small>
+                        <div className='flex mr-[1.25rem]'>
+                            <img src="/src/assets/icon-compass.png" alt="" />
+                            <span className='ml-[0.5rem]'>East</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className='w-[63%]'></div>
         </div>
     )
 }
