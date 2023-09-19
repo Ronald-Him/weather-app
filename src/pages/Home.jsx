@@ -12,7 +12,11 @@ function Home(){
                 <div className=''>
                     <div className='grid grid-cols-4 gap-6'>
                         <div className=''>
-                            <figure className='mb-[20px] cursor-pointer'><img src="/src/assets/live-camera-1.jpg" alt="" className='rounded-lg block h-auto w-full max-w-full' /></figure>
+                            <figure className='mb-[20px] cursor-pointer'>
+                                <img src="/src/assets/live-camera-1.jpg" alt="" className='rounded-lg block h-auto w-full max-w-full'/>
+                                {/* <img src="/src/assets/play-button.png" alt="" className="absolute m-auto"/> */}
+                                
+                            </figure>
                             <h3 className='text-white'>New York</h3>
                             <small className='text-slate-500'>8 oct, 8:00AM</small>
                         </div>
