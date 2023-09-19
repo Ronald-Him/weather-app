@@ -3,15 +3,17 @@
 import { Fragment } from "react";
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
 
     let Links = [
         {name: 'Home', link: '/'},
-        {name: 'News', link: '/'},
-        {name: 'Live Cameras', link: '/'},
-        {name: 'Photos', link: '/'},
-        {name: 'Contacts', link: '/'},
+        {name: 'News', href:'/src/pages/News.jsx', current: false},
+        {name: 'Live Cameras', href:'/src/pages/LiveCameras.jsx', current: false },
+        {name: 'Photos', href:'/src/pages/Photos.jsx', current: false},
+        {name: 'Contacts', href:'/src/pages/Contacts.jsx', current: false},
     ]
 
     let [isOpen, setisOpen] = useState(false);
@@ -40,7 +42,7 @@ const Header = () => {
                 {
                     Links.map((link, index) => (
                         <li key={index} className="text-slate-100 button button-hover cursor-pointer">
-                            <a href="/">{link.name}</a>
+                            <Link href="/">{link.name}</Link>
                         </li>))
                 }
             </ul>
