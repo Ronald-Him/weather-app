@@ -1,7 +1,10 @@
 import './weatherStyle.scss';
+import SearchBar from './SearchBar';
+import { Fragment } from 'react';
 function Weather(){
     return(
-        // 
+        <Fragment> 
+        <SearchBar/>
         <div className='text-gray-300 md:flex max-w-[1170px] max-h-[300px] mx-auto rounded-lg mt-[4.5rem] overflow-hidden bg-[#323544]'>
             <div className='w-[37%]'>
                 <div className='p-[0.625rem] flex justify-between bg-[#2d303d]'>
@@ -9,7 +12,7 @@ function Weather(){
                     <h3>6 Oct</h3>
                 </div>
                 <div className='px-[1.25rem] py-[1.875rem]'>
-                    <h2 className='text-[1.125rem]'>Phnom Penh</h2>
+                    <h2 className='text-[1.125rem] location'>Phnom Penh</h2>
                     <div className='flex'>
                         <h1 className='text-[5.625rem] mr-[1.875rem] font-bold text-white'>20&deg;C</h1>
                         <img src="/src/assets/icons/icon-1.svg" alt="" width='90px' />
@@ -17,11 +20,11 @@ function Weather(){
                     <div className='flex'>
                         <div className='flex mr-[1.25rem]'>
                             <img src="/src/assets/icon-umberella.png" alt="" />
-                            <span className='ml-[0.5rem]'>20%</span>
+                            <span className='ml-[0.5rem] humidity-percentage'>20%</span>
                         </div>
                         <div className='flex mr-[1.25rem]'>
                             <img src="/src/assets/icon-wind.png" alt="" />
-                            <span className='ml-[0.5rem]'>18km/h</span>
+                            <span className='ml-[0.5rem] wind-speed'>18km/h</span>
                         </div>
                         <div className='flex mr-[1.25rem]'>
                             <img src="/src/assets/icon-compass.png" alt="" />
@@ -93,6 +96,7 @@ function Weather(){
                 </div>
             </div>
         </div>
+        </Fragment>
     )
 }
 export default Weather;
