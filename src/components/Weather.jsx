@@ -40,7 +40,7 @@ const Weather = () =>{
         <button type="submit" className="absolute top-1 right-[133px] bottom-1 px-10 rounded-[30px] bg-[#009ad8] text-white cityInput" onClick={()=>{search()}}>Find</button>
         </form>
 
-        <div className='text-gray-300 md:flex max-w-[1170px] max-h-[300px] mx-auto rounded-lg mt-[4.5rem] overflow-hidden bg-[#323544]'>
+        <div className='text-gray-300 md:flex max-w-[1170px] max-h-[300px] mx-auto rounded-lg mt-[4.8rem] overflow-hidden bg-[#323544]'>
             <div className='w-[37%]'>
                 <div className='p-[0.625rem] flex justify-between bg-[#2d303d]'>
                     <h3>Monday</h3>

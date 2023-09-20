@@ -8,7 +8,7 @@ function Home(){
             <Weather/>
             <div className='bg-[#1e202b]'>
             <div className='container mx-auto px-32 pt-[50px] bg-[#1e202b]'>
-                <h2 className='text-white text-3xl mb-[30px]'>Live Camera </h2>
+                <h2 className='text-white text-3xl mb-[30px] mt-6'>Live Camera </h2>
                 <div className=''>
                     <div className='grid grid-cols-4 gap-6'>
                         <div className=''>
